@@ -1,0 +1,40 @@
+/* reset all spacing and use border box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header sticks to top of viewport */
+header {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  border-bottom: 3px solid #262930;
+  background-color: #f0ebb5;
+  color: #262930;
+}
+
+/* main is 80 percent wide and centered */
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 4em; /* keeps last paragraph above fixed footer */
+  background-color: #a3c285;
+  color: #1f2e1a;
+}
+
+/* footer is fixed to bottom and full width */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #bde8fc;
+  color: #1a1440;
+}
+
+/* paragraph padding */
+p {
+  padding: 1em;
+}

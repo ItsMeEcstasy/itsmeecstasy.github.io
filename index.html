@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title>Jack Brough - Portfolio</title>
+  <!-- fonts from my wireframe -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+  <!-- link to the external css -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- nav links on the left, credits button on the right -->
+    <nav>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="button" href="#credits">Credits</a>
+  </header>
+
+  <main>
+    <!-- clipboard and heading -->
+    <section class="hero">
+      <img src="clipboard.png" alt="Pixel art clipboard with a checklist" width="180" height="188">
+      <h1>jack is a designer</h1>
+    </section>
+
+    <!-- photo and text side by side -->
+    <section id="about" class="card">
+      <img src="jack.png" alt="Jack Brough smiling, wearing a lanyard" width="200" height="399">
+      <div>
+        <h2>about</h2>
+        <p>hi everyone, welcome to my portfolio!</p>
+        <p>My name is Jack Brough. I am a senior university student at the University of Alabama at Birmingham. My major is in Computer Science and minor is in Mandarin Chinese.</p>
+        <!-- social links -->
+        <div class="social">
+          <a href="#"><img src="linkedin.svg" alt="LinkedIn" width="40" height="40"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram" width="40" height="40"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- work: cards  -->
+    <section id="work" class="card">
+      <h2>work</h2>
+      <div class="project-grid">
+        <article>
+          <img src="box-model.svg" alt="Boxes showing a header, main area, and footer" width="300" height="180">
+          <h3>Box Model Page</h3>
+          <p>A page with a sticky header, a centered main area, and a fixed footer.</p>
+        </article>
+        <article>
+          <img src="tic-tac-toe.svg" alt="A tic-tac-toe board with X marks and O marks" width="300" height="180">
+          <h3>Tic-Tac-Toe Board</h3>
+          <p>A three by three game board built with CSS Grid.</p>
+        </article>
+        <article>
+          <img src="portfolio.svg" alt="Wireframe of a portfolio page" width="300" height="180">
+          <h3>Responsive Portfolio</h3>
+          <p>This site. It uses Flexbox, Grid, and media queries.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="card">
+      <h2>contact</h2>
+      <!-- email -->
+      <form action="https://formsubmit.co/example@example.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>copyright jrb studios 2026</p>
+    <p id="credits">Designed and built by Jack Brough</p>
+  </footer>
+</body>
+</html>
